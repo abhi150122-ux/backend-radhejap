@@ -1,3 +1,7 @@
+## Hostinger deployment
+
+Upload the contents of this backend to the server and use `public_html` as the document root. Laravel is configured to resolve its public path to this directory. Keep `app`, `bootstrap`, `config`, `database`, `routes`, `storage`, and `vendor` outside the web root when possible, and point Hostinger's document root at `public_html`.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

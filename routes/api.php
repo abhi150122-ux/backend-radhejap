@@ -7,6 +7,14 @@ use App\Http\Controllers\Api\JapController;
 use App\Http\Controllers\Api\MantraController;
 use App\Http\Controllers\Api\StateController;
 
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'ok',
+        'service' => 'radhe-jap-api',
+        'timestamp' => now()->toISOString(),
+    ]);
+});
+
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
