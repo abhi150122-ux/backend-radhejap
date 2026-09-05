@@ -19,6 +19,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/state', [StateController::class, 'show']);
+    Route::post('/sync', [StateController::class, 'sync']);
     Route::patch('/settings', [StateController::class, 'update']);
     Route::post('/mantras', [MantraController::class, 'store']);
     Route::post('/jap', [JapController::class, 'store']);
